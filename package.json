@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
+    "test:watch": "jest --watch",
     "dev": "webpack-dev-server -d --hot",
     "format:prettier": "prettier --write '**/*.{css,gql,graphql,html,js,jsx,json,less,md,mdx,scss,ts,tsx,vue,yaml,yml}' '.editorconfig' 'LICENSE'",
     "lint:styles": "stylelint --cache ./src/",
@@ -81,7 +82,7 @@
     "import-sort-parser-babylon": "^6.0.0",
     "import-sort-parser-typescript": "^6.0.0",
     "import-sort-style-module": "^6.0.0",
-    "jest": "^24.4.0",
+    "jest": "^24.5.0",
     "jest-styled-components": "6.3.1",
     "lint-staged": "^8.1.5",
     "node-sass": "^4.11.0",
