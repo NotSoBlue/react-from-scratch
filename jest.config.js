@@ -1,5 +1,10 @@
 module.exports = {
   roots: ["<rootDir>/src"],
+  setupTestFrameworkScriptFile: "jest-enzyme",
+  testEnvironment: "enzyme",
+  testEnvironmentOptions: {
+    enzymeAdapter: "react16",
+  },
   transform: {
     "^.+\\.tsx?$": "ts-jest",
   },
