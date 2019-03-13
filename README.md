@@ -2,7 +2,7 @@
 
 A React/Typescript project built from scratch with dev tools already integrated. Inspired with https://github.com/iamturns/create-exposed-app
 
-### Install packages
+## Install packages
 
 With Yarn (recommended)
 
@@ -16,7 +16,7 @@ With NPM
 npm i
 ```
 
-### Start Development Server
+## Start Development Server
 
 With Yarn (recommended)
 
