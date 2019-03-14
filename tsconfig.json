@@ -6,7 +6,7 @@
     "noImplicitAny": true,
     "module": "commonjs",
     "strict": true,
-    "types": ["react"],
+    "types": ["react", "jest"],
     "target": "esnext",
     "jsx": "react"
   },

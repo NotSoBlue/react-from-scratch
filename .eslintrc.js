@@ -30,6 +30,7 @@ module.exports = {
     "import/no-default-export": "error",
     // Too restrictive: https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/destructuring-assignment.md
     "react/destructuring-assignment": "off",
+    "import/no-extraneous-dependencies": ["error", { devDependencies: true }],
     "react/prop-types": 0,
   },
   settings: {
