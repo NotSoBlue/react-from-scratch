@@ -9,7 +9,9 @@ const App: React.SFC = (): JSX.Element => (
       <GlobalStyle />
       <div className="App">
         <main className="shore-main">
-          <h1 className="shore-main__title">Dashboard</h1>
+          <h1 data-testid="main-title" className="shore-main__title">
+            Dashboard
+          </h1>
           <div className="shore-main__dashboard">
             <article className="dashboard__top-options">
               {/*  datepicker and download as PDF goes here */}

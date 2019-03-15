@@ -1,14 +1,16 @@
 import * as React from "react"
 import { render, waitForElement } from "react-testing-library"
 
+import { App } from "../app"
 import { multiply } from "../app-helper"
-import { Sample } from "./react-component-sample"
 
-it("renders personalized greeting", async () => {
-  // Render new instance in every test to prevent leaking state
-  const { getByTestId } = render(<Sample text="Satoshi" />)
-  await waitForElement(() => getByTestId("findme"))
-  expect(getByTestId("findme")).toHaveTextContent(/satoshi/i)
+describe("Test App Components", () => {
+  it("renders the app, and the main title says dashboard", async () => {
+    const { getByTestId } = render(<App />)
+
+    await waitForElement(() => getByTestId("main-title"))
+    expect(getByTestId("main-title")).toHaveTextContent(/Dashboard/)
+  })
 })
 
 test("multiply two numbers", () => {
