@@ -1,4 +1,4 @@
-import theme from "styled-theming"
+import * as theme from "styled-theming"
 
 /**
  * Variables for Styles
@@ -20,11 +20,7 @@ const FONT: ReadOnlyStyles = {
 
 const NavBarMainColor = theme("mode", {
   default: COLOR.BLUE_CHILL,
+  dark: "#666",
 })
 
-export const DefaultStyles: {} = {
-  NavBar: {
-    NavBarMainColor,
-  },
-  FONT,
-}
+export const NavMain = { NavBarMainColor, FONT }
