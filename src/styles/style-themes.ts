@@ -23,4 +23,14 @@ const NavBarMainColor = theme("mode", {
   dark: "#666",
 })
 
-export const NavMain = { NavBarMainColor, FONT }
+export const NavMain = {
+  NavBarMainColor,
+}
+
+export const Font = {
+  FONT,
+}
+
+export const Color = {
+  COLOR,
+}
