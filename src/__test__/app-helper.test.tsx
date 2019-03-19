@@ -6,6 +6,7 @@ import { NavBar } from "../components/nav-bar"
 describe("Test App Components", () => {
   it("renders the app, and the main title says dashboard", async () => {
     const { getByTestId } = render(<NavBar />)
+
     await waitForElement(() => getByTestId("navbar-main"))
     expect(getByTestId("navbar-main")).toHaveTextContent(/shore/)
   })
